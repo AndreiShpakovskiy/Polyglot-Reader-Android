@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BooksActivity">
+
+    <TextView
+        android:id="@+id/noBooksText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text=""/>
+
+    <Button
+        android:id="@+id/yandexButton"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:background="#5c413a"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="12sp"/>
+<!--
+    <Button
+        android:id="@+id/swapButton"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/yandexButton"
+        android:background="#5C413A"
+        android:textColor="#FFFFFF"
+        android:text="swap"
+        android:textSize="11sp"
+        android:layout_marginTop="1dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/yandexButton"
+        android:layout_toLeftOf="@+id/swapButton"
+        android:background="#5C413A"
+        android:textColor="#FFFFFF"
+        android:text="ENGLISH"
+        android:textSize="12sp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_toStartOf="@+id/swapButton"
+        android:layout_marginEnd="1dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/yandexButton"
+        android:layout_toRightOf="@+id/swapButton"
+        android:background="#5C413A"
+        android:textColor="#FFFFFF"
+        android:text="RUSSIAN"
+        android:textSize="12sp"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="1dp" />
+-->
+    <ListView
+        android:id="@+id/availableBooksList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yandexButton"/>
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1e9d1"
+    tools:context=".Reader"
+    android:id="@+id/readerLayout">
+
+    <TextView
+        android:id="@+id/bookView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        android:alpha="0.95"
+        android:layout_above="@+id/invisibleButton"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginRight="70dp"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="70dp" />
+
+    <ImageView
+        android:id="@+id/quickSettings"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/dots_horisontal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="3dp"
+        android:alpha="0.7"/>
+
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:alpha="0.3"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/nextButton"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:alpha="0.3"
+        app:srcCompat="@drawable/next"
+        android:layout_below="@id/quickSettings"/>
+
+    <Button
+        android:id="@+id/invisibleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progress"
+        android:alpha="0.0"
+        android:enabled="false"/>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:progress="89"/>
+
+</RelativeLayout>
